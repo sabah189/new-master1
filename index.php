@@ -35,7 +35,7 @@ if ($result)
     }
 	
 	else{
-        header('location: index.php');
+        header('location: home.php');
      }
 }
 }
