@@ -132,28 +132,28 @@ if ($result)
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<div class="input-group mb-8">
+									<div class="input-group mb-4">
 										<!--
 											use code for form submit
 										-->
 										<input class="btn btn-primary btn-lg btn-block" name="go" type="submit" value="Se connecter">
 
 									</div>
+									<div class="input-group mb-8">
+										<a class="btn btn-outline-primary btn-lg btn-block" href="register.php">Créer un compte</a>
+									</div> 
 
-									<div class="row " style="padding-left: 20px; font-family: Courier New, monospace;">
+									<div class="row mb-3" style="padding-left: 20px; font-family: Courier New, monospace;">
 <div class="col ">
 	<label>Pour plus d’informations contactez nous.<br><br>
-		<i> Mail : <a href="mailto:textosarl@gmail.com" style="color: #0573c1">textosarl@gmail.com</a></i><br><br>
+	<i> Mail : <a href="mailto:both1suppo@gmail.com" style="color: #0573c1">both1suppo@gmail.com</a></i><br><br>
 		<i> Tél/Whtsp : <a href="tel:+212684486046" style="color: #0573c1">+212684486046</a></i><br>
 	</label><br>
 </div>
-									<div class="form-footer text-center mt-5">
-                            <p class="text-muted">Pas de compte ?  &nbsp;<a href="register.php" style="color: #84cde1">  &nbsp;Créer le !</a></p>
-							
-                            <!-- <p class="text-muted">User : admin  </p>   <p class="text-muted">Password : admin  </p> -->
-                        </div>
+
 									
 								</div>
+							
 							</div>
 						</form>
 					</div>
