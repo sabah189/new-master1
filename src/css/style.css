@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: calc(0.8em + 0.5vmin);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    max-width: 768px;
+    margin: 0 auto;
+    
+}
+
+.app > div {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+}
+
+svg {
+    width: 100%;
+    min-height: 370px !important;
+    border: solid 1px #ababab;
+
+}
+
+.flex-middle {
+    align-items: center;
+    justify-content: center;
+    padding: .75rem;
+    
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .app {
+        font-size: calc(0.8em + 1vmin);
+    }
+
+    svg {
+        max-height: 40vh;
+        min-height: 25vh !important;
+    }
+
+    .column {
+        margin: 0px
+    }
+
+    .columns {
+        margin: 0px
+    }
+
+    .columns:not(:last-child) {
+        margin: 0px;
+    }
+
+    .textarea:not([rows]) {
+        min-height: 3em;
+    }
+}

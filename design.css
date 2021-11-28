@@ -1,0 +1,18 @@
+.dataTables_filter {
+    display: none;
+    }
+    
+    .dataTables_paginate  {
+    display: none;
+    }
+    .dataTables_length  {
+    display: none;
+    }
+    
+    .dataTables_info {
+    display: none;
+    }
+    .dataTable > thead > tr > th[class*="sort"]:before,
+    .dataTable > thead > tr > th[class*="sort"]:after {
+        content: "" !important;
+    }
