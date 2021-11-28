@@ -6,10 +6,7 @@ include("conn.php");
  $datenow = date('Y-m-d H:i:s');
     //session_start();    
 
-if(isset($_POST["go"]))
-
-
-{
+if(isset($_POST["go"])){
 	$user   = $_POST["log"];
 	$passe1 = $_POST["pas"];
 	$passe  = ($passe1);
@@ -38,7 +35,7 @@ if ($result)
     }
 	
 	else{
-        header('location: home.php');
+        header('location: index.php');
      }
 }
 }
@@ -48,6 +45,7 @@ if ($result)
     
 
 ?>
+
 
 
 <!DOCTYPE html>
@@ -82,13 +80,23 @@ if ($result)
 </head>
 <body class="login-page" style="background-image: url('vendors/images/login.jpeg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
 
-	<div class="login-wrap d-flex align-items-center flex-wrap justify-content-center">
-		<div class="container">
+	<div class="login-wrap" style="width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;">
+		<div class="container" >
 			<div class="row align-items-center">
 				<div class="col-md-6 col-lg-7">
 				</div>
 				<div class="col-md-6 col-lg-5">
-					<div class="login-box bg-white box-shadow border-radius-10">
+					<div class="login-box bg-white box-shadow border-radius-10 ">
 						<div class="login-title">
 							<h5 class="text-center text-primary">Veuillez saisir vos informations :</h5>
 						</div>
@@ -124,19 +132,26 @@ if ($result)
 							
 							<div class="row">
 								<div class="col-sm-12">
-									<div class="input-group mb-0">
+									<div class="input-group mb-8">
 										<!--
 											use code for form submit
 										-->
 										<input class="btn btn-primary btn-lg btn-block" name="go" type="submit" value="Se connecter">
 
 									</div>
-									 <div class="font-16 weight-600 pt-10 pb-10 text-center" data-color="#707373">OU</div>
-									<div class="input-group mb-0">
-										<a class="btn btn-outline-primary btn-lg btn-block" href="register.php">Créer un compte</a>
-									</div> 
 
-									
+									<div class="row " style="padding-left: 20px; font-family: Courier New, monospace;">
+<div class="col ">
+	<label>Pour plus d’informations contactez nous.<br><br>
+		<i> Mail : <a href="mailto:textosarl@gmail.com" style="color: #0573c1">textosarl@gmail.com</a></i><br><br>
+		<i> Tél/Whtsp : <a href="tel:+212684486046" style="color: #0573c1">+212684486046</a></i><br>
+	</label><br>
+</div>
+									<div class="form-footer text-center mt-5">
+                            <p class="text-muted">Pas de compte ?  &nbsp;<a href="register.php" style="color: #84cde1">  &nbsp;Créer le !</a></p>
+							
+                            <!-- <p class="text-muted">User : admin  </p>   <p class="text-muted">Password : admin  </p> -->
+                        </div>
 									
 								</div>
 							</div>
